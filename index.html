@@ -68,19 +68,19 @@
     <div class="integrantes-box">
       <ul class="integrantes-list" id="integrantesList">
         <li class="integrante-item">
-          <img src="images/icons/seta-hover.png" class="seta-icon" alt="seta" />
+          <img src="assets/images/icons/seta-hover.png" class="seta-icon" alt="seta" />
           <span>Camile Vitoria Silva - RM 566649</span>
         </li>
         <li class="integrante-item">
-          <img src="images/icons/seta-hover.png" class="seta-icon" alt="seta" />
+          <img src="assets/images/icons/seta-hover.png" class="seta-icon" alt="seta" />
           <span>Lucas de Oliveira Miranda Caetano - RM 568036</span>
         </li>
         <li class="integrante-item">
-          <img src="images/icons/seta-hover.png" class="seta-icon" alt="seta" />
+          <img src="assets/images/icons/seta-hover.png" class="seta-icon" alt="seta" />
           <span>Marco Túlio Longo Conte - RM 568373</span>
         </li>
         <li class="integrante-item">
-          <img src="images/icons/seta-hover.png" class="seta-icon" alt="seta" />
+          <img src="assets/images/icons/seta-hover.png" class="seta-icon" alt="seta" />
           <span>Sofia Souza Rodrigues - RM 566708</span>
         </li>
       </ul>
@@ -88,45 +88,84 @@
   </section>
 
   
-  <section id="pokemons" class="section-pokemons">
+   <section id="pokemons" class="section-pokemons">
     <div class="pokemons-inner">
       <aside class="pokemons-filters">
         <h2 class="pokemons-title">Descubra os<br/>pokemons</h2>
         <ul class="filter-list">
           <li class="filter-item active" data-filter="todos">
-            <img src="images/icons/seta-hover.png" class="filter-seta" alt="seta" />
+            <img src="assets/images/icons/seta-hover.png" class="filter-seta" alt="seta" />
             <span>Todos</span>
           </li>
           <li class="filter-item" data-filter="agua">
-            <img src="images/icons/seta-hover.png" class="filter-seta" alt="seta" />
+            <img src="assets/images/icons/seta-hover.png" class="filter-seta" alt="seta" />
             <span>Água</span>
           </li>
           <li class="filter-item" data-filter="fogo">
-            <img src="images/icons/seta-hover.png" class="filter-seta" alt="seta" />
+            <img src="assets/images/icons/seta-hover.png" class="filter-seta" alt="seta" />
             <span>Fogo</span>
           </li>
           <li class="filter-item" data-filter="planta">
-            <img src="images/icons/seta-hover.png" class="filter-seta" alt="seta" />
+            <img src="assets/images/icons/seta-hover.png" class="filter-seta" alt="seta" />
             <span>Planta</span>
           </li>
           <li class="filter-item" data-filter="eletrico">
-            <img src="images/icons/seta-hover.png" class="filter-seta" alt="seta" />
+            <img src="assets/images/icons/seta-hover.png" class="filter-seta" alt="seta" />
             <span>Elétrico</span>
           </li>
           <li class="filter-item" data-filter="gelo">
-            <img src="images/icons/seta-hover.png" class="filter-seta" alt="seta" />
+            <img src="assets/images/icons/seta-hover.png" class="filter-seta" alt="seta" />
             <span>Gelo</span>
           </li>
           <li class="filter-item" data-filter="normal">
-            <img src="images/icons/seta-hover.png" class="filter-seta" alt="seta" />
+            <img src="assets/images/icons/seta-hover.png" class="filter-seta" alt="seta" />
             <span>Normal</span>
           </li>
           <li class="filter-item" data-filter="psiquico">
-            <img src="images/icons/seta-hover.png" class="filter-seta" alt="seta" />
+            <img src="assets/images/icons/seta-hover.png" class="filter-seta" alt="seta" />
             <span>Psíquico</span>
           </li>
         </ul>
       </aside>
+
+      <div class="pokemons-grid" id="pokemonsGrid">
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box" id="modalBox">
+      <button class="modal-close" id="modalClose">✕</button>
+      <h3 class="modal-pokemon-name" id="modalName"></h3>
+      <div class="modal-info-grid">
+        <div class="modal-info-item">
+          <span class="modal-label">Altura:</span>
+          <span id="modalAltura"></span>
+        </div>
+        <div class="modal-info-item">
+          <span class="modal-label">Peso:</span>
+          <span id="modalPeso"></span>
+        </div>
+        <div class="modal-info-item">
+          <span class="modal-label">Categoria:</span>
+          <span id="modalCategoria"></span>
+        </div>
+        <div class="modal-info-item">
+          <span class="modal-label">Habilidades:</span>
+          <span id="modalHabilidades"></span>
+        </div>
+        <div class="modal-info-item modal-tipo">
+          <span class="modal-label">Tipo:</span>
+          <span id="modalTipo"></span>
+        </div>
+        <div class="modal-info-item modal-fraqueza">
+          <span class="modal-label">Fraqueza:</span>
+          <span id="modalFraqueza"></span>
+        </div>
+      </div>
+      <div class="modal-evolutions" id="modalEvolutions"></div>
+    </div>
+  </div>
 
   <div class="footer-banner-wrap">
     <img src="./assets/images/global/footer-banner.jpg" alt="Pokemon Banner" class="footer-banner-img" />
