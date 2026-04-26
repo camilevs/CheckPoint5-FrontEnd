@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkpoint Project</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/integrantes.css" />
+    <link rel="stylesheet" href="css/pokemons.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/cartas.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+
+  <header id="inicio" class="header border border-3 border-black">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="nav-logo-text">CP 5</span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links d-flex align-items-center" id="navLinks">
+        <li><a href="#inicio" class="nav-link">Início</a></li>
+        <li><a href="#integrantes" class="nav-link">Integrantes</a></li>
+        <li><a href="#pokemons" class="nav-link">Pokémons</a></li>
+        <li><a href="#cartas" class="nav-link">Cartas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-banner">
+      <img src="./assets/images/global/banner-full.png" alt="Banner Pokémon" class="hero-banner-img" />
+      <div class="hero-content">
+        <div class="hero-title-box">
+          <img src="./assets/images/global/moldura.png" class="hero-frame" />
+
+          <div class="hero-bg">
+        
+          </div>
+
+          <h1 class="hero-title">
+            Checkpoint<br/>Project
+          </h1>
+        </div>
+        <button class="hero-btn" onclick="document.getElementById('integrantes').scrollIntoView({behavior:'smooth'})">Start</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-banner-wrap">
+    <img src="./assets/images/global/footer-banner.jpg" alt="Pokemon Banner" class="footer-banner-img" />
+    <div class="footer-banner-overlay">
+    </div>
+  </div>
+
+  <footer class="footer">
+    <h2 class="footer-banner-title">Explore e divirta-se</h2>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <p class="footer-text">1º ano - Engenharia de Software</p>
+        <p class="footer-text">FIAP - Paulista</p>
+        <p class="footer-text">São Paulo · SP</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-text">Telefone: (12) 3456-7890</p>
+        <p class="footer-text">E-mail: checkpoint@fiap.com.br</p>
+        <p class="footer-text">Redes sociais: @checkpoint</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+  
