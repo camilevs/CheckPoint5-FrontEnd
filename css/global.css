@@ -1,14 +1,14 @@
 :root {
-  --pokemon-blue: #5b74c4;
+  --pokemon-blue: #6d86dd;
   --pokemon-blue-dark: #4a63b3;
   --pokemon-blue-light: #7b94d9;
   --pokemon-yellow: #f5c842;
   --pokemon-orange: #E5881A;
   --btn-default: #7CAAC9;
-  --btn-hover: #E5881A;
+  --btn-hover: #5881AE;
   --font-pixel: 'Press Start 2P', cursive;
   --font-body: "Noto Serif", sans-serif;
-  --section-bg: #f5f0e8;
+  --section-bg: #FBF6F3;
   --white: #ffffff;
   --black: #000000;
   --gray-light: #ececec;

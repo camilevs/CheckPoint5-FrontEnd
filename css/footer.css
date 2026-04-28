@@ -33,7 +33,7 @@
 }
 
 .footer {
-  background: #4a63b3;
+  background:var(--pokemon-blue);
   padding: 40px 2rem;
 }
 

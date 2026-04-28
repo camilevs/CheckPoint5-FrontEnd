@@ -61,6 +61,8 @@
   left: 50%;
   transform: translate(-50%, -70%);
   z-index: 2;
+  font-size:3.1rem;
+  line-height: 1.3rem;
 
   font-family: 'Press Start 2P', cursive;
   text-align: center;

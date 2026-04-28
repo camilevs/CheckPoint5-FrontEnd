@@ -20,7 +20,7 @@
 }
 
 .modal-box {
-  background: #f7f3ea;
+  background: var(--section-bg) ;
   border-radius: 18px;
   padding: 40px 50px 36px;
   max-width: 680px;

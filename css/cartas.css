@@ -18,7 +18,7 @@
 
 .cartas-title {
   font-family: var(--font-pixel);
-  font-size: 2.0rem;
+  font-size: 2.6rem;
   letter-spacing: -2px;
   color: var(--black);
   line-height: 1.7;
@@ -55,7 +55,7 @@
   border: 1.5px solid #aaa;
   border-radius: 15px;
   padding: 9px 16px;
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   font-family: var(--font-body);
   color: #333;
   background: #fff;
