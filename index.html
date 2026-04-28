@@ -136,6 +136,94 @@
     </div>
   </section>
 
+  <section id="cartas" class="section-cartas">
+    <div class="cartas-inner">
+      <div class="cartas-form-area">
+        <h2 class="cartas-title">Crie sua<br/>própria carta<br/>especial</h2>
+        <div class="cartas-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cartaNome">Nome da carta:</label>
+              <input type="text" id="cartaNome" placeholder="Nome da carta" />
+            </div>
+            <div class="form-group">
+              <label for="cartaVida">Quantidade de vida:</label>
+              <input type="number" id="cartaVida" placeholder="Ex: 120" min="10" max="999" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cartaPokemon">Pokémon:</label>
+              <select id="cartaPokemon">
+                <option value="">Selecione o pokémon</option>
+                <option value="Bulbasaur">Bulbasaur</option>
+                <option value="Charmander">Charmander</option>
+                <option value="Squirtle">Squirtle</option>
+                <option value="Pikachu">Pikachu</option>
+                <option value="Eevee">Eevee</option>
+                <option value="Snorlax">Snorlax</option>
+                <option value="Jigglypuff">Jigglypuff</option>
+                <option value="Lapras">Lapras</option>
+                <option value="Abra">Abra</option>
+                <option value="Growlithe">Growlithe</option>
+                <option value="Ponyta">Ponyta</option>
+                <option value="Pidgey">Pidgey</option>
+                <option value="Clefairy">Clefairy</option>
+                <option value="Caterpie">Caterpie</option>
+                <option value="Bellsprout">Bellsprout</option>
+                <option value="Krabby">Krabby</option>
+                <option value="Goldeen">Goldeen</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cartaAtaque">Ataque:</label>
+              <input type="text" id="cartaAtaque" placeholder="Ex: Thunderbolt" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cartaCategoria">Categoria:</label>
+              <select id="cartaCategoria">
+                <option value="">Selecione a categoria</option>
+                <option value="Básico">Básico</option>
+                <option value="Estágio 1">Estágio 1</option>
+                <option value="Estágio 2">Estágio 2</option>
+                <option value="Lendário">Lendário</option>
+                <option value="Especial">Especial</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cartaResistencia">Resistência:</label>
+              <input type="text" id="cartaResistencia" placeholder="Ex: Água -30" />
+            </div>
+          </div>
+          <button class="btn-enviar" id="btnEnviar" onclick="gerarCarta()">Enviar</button>
+        </div>
+      </div>
+
+      <div class="carta-preview-area">
+        <div class="carta-preview" id="cartaPreview">
+          <img src="assets/images/global/card.png" alt="Carta" class="carta-moldura" />
+          <div class="carta-dados" id="cartaDados" style="display:none;">
+            <div class="carta-topo">
+              <span class="carta-nome-display" id="cartaNomeDisplay"></span>
+              <span class="carta-vida-display" id="cartaVidaDisplay"></span>
+            </div>
+            <div class="carta-img-area">
+              <img src="" alt="" id="cartaPokeImg" class="carta-poke-img" />
+            </div>
+            <div class="carta-info-baixo">
+              <div class="carta-categoria-display" id="cartaCategoriaDisplay"></div>
+              <div class="carta-ataque-display" id="cartaAtaqueDisplay"></div>
+              <div class="carta-resistencia-display" id="cartaResistenciaDisplay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <div class="modal-overlay" id="modalOverlay">
     <div class="modal-box" id="modalBox">
       <button class="modal-close" id="modalClose">✕</button>

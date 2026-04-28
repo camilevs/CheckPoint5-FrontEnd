@@ -1,4 +1,15 @@
+@media (max-width: 1050px) {
+  .hero-title {
+    font-size: 2.5rem;
+}
+}
+
+
+
 @media (max-width: 900px) {
+   .nav-link {
+    font-size: 0.9rem;
+  }
   .pokemons-filters {
     display: flex;
     flex-direction: column;
@@ -109,36 +120,31 @@
     position: relative;
   }
 
+  
+  
   .hamburger {
-    display: flex;
+    display: none;
   }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-    padding-bottom: 10px;
-  }
-
-  .nav-links.open {
     display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: auto;
+    padding-bottom: 0;
   }
 
   .nav-link {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-    font-size: 0.95rem;
+    padding: 0;
+    border-bottom: none;
+    font-size: 0.85rem;
   }
 
-  .hero-banner-img {
-    height: 280px;
-  }
 
   .hero-title {
     font-size: 1.0rem;
     transform: translate(-50%, -125%);
-  }
+  } 
 
   .hero-title-box {
     padding: 14px 20px;
@@ -288,4 +294,31 @@
     transform: translate(-50%, -155%);
   }
 
+    .nav-logo-text {
+    font-size:0.8rem;
+  }
+}
+
+  .nav-link {
+  padding: 0;
+  border-bottom: none;
+  font-size: 0.8rem;
+}
+
+@media (max-width:400px) {
+    .nav-link {
+  font-size: 0.6rem;
+}
+  .nav-logo-text {
+    font-size:0.6rem;
+  }
+}
+
+@media (max-width:350px) {
+    .nav-link {
+  font-size: 0.5rem;
+}
+  .nav-logo-text {
+    font-size:0.5rem;
+  }
 }
